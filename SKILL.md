@@ -92,6 +92,8 @@ footer con la procedencia del material
 - **Nada de localStorage, sessionStorage ni window.storage.** El estado vive en variables JavaScript durante la sesión. Los artifacts de Claude.ai no soportan almacenamiento del navegador.
 - **SVG inline** para todos los gráficos, dibujos y simuladores. Nada de imágenes externas ni librerías.
 - **Responsive de verdad.** El índice lateral se convierte en una fila de chips horizontales arriba en pantallas angostas. Se estudia desde el celular.
+- **Controles de 44×44 px como mínimo.** Todo botón, chip, opción de quiz, link del índice, slider o casilla tiene un área táctil de al menos 44×44 px, también a 380 px de ancho (la plantilla ya trae la regla; no la pises con alturas fijas menores).
+- **Fórmulas en MathML, cada una envuelta en `<span class="mw">…</span>`** (la plantilla trae el CSS: se desplaza sola si es ancha). `<math>` solo no se comporta como contenedor de desplazamiento y desborda a 320 px.
 - **Accesible.** `role="img"` y `aria-label` en cada SVG, `:focus-visible` visible, y respetar `prefers-reduced-motion` en toda animación.
 
 ### Sistema visual
